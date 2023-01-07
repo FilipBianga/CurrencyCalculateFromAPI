@@ -1,0 +1,72 @@
+POST localhost:8080/currencies/calc
+Content-Type: application/json
+
+
+  {
+    "name": "komputer 1",
+    "price": "345.0",
+    "date": "2022-01-03"
+  }
+
+
+###
+POST localhost:8080/currencies/calc
+Content-Type: application/json
+
+
+{
+"name": "komputer 2",
+"price": "543.0",
+"date": "2022-01-03"
+}
+
+
+###
+POST localhost:8080/currencies/calc
+Content-Type: application/json
+
+
+{
+"name": "komputer 3",
+"price": "346.0",
+"date": "2022-01-03"
+}
+
+
+###
+POST localhost:8080/currencies/calc
+Content-Type: application/json
+
+
+{
+  "name": "komputer 1",
+  "price": "345.0",
+  "date": "2022-01-10"
+}
+
+
+###
+POST localhost:8080/currencies/calc
+Content-Type: application/json
+
+
+{
+  "name": "komputer 2",
+  "price": "543.0",
+  "date": "2022-01-10"
+}
+
+
+###
+POST localhost:8080/currencies/calc
+Content-Type: application/json
+
+
+{
+  "name": "komputer 3",
+  "price": "346.0",
+  "date": "2022-01-10"
+}
+
+
+
