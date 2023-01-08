@@ -11,12 +11,12 @@ public class CurrencyConverterApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(CurrencyConverterApplication.class, args);
-        
     }
 
     @Bean
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
+
 
 }

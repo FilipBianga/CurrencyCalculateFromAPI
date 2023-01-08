@@ -10,6 +10,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Service
 @AllArgsConstructor
@@ -31,6 +32,11 @@ public class CalcServiceImpl implements CalcService {
         Double conv = BigDecimal.valueOf(priceToCalculate).multiply(BigDecimal.valueOf(mid.getMid())).doubleValue();
 
         return NbpResult.builder().nazwa(name).data_ksiegowania(date).koszt_USD(priceToCalculate).koszt_PLN(conv).build();
+    }
+
+    @Override
+    public List<NbpResult> findAll() {
+        return repository.findAllEager();
     }
 
     private NbpRates getDate(String date) {
